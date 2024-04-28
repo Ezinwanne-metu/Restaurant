@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(media/Background.jpg);
+    background-size: cover;
+    font-family: sans-serif
+}
+
+.program{
+    text-align: center;
+    background:rgb(0,100,0);
+}
+
+.program ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    font-size: -20px;
+}
+
+.program ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.program ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.program ul li:hover{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.program .fa{
+    margin-right: 8px;
+}
+
+.sub-menu{
+    display: none;
+}
+
+.program ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.program ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.program ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.program ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+.program ul li:hover .sub-menu ul li a:hover{
+    color: #b2ff00;
+}
